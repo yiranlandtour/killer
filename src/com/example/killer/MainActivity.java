@@ -144,8 +144,7 @@ public String findwhich(int a)
 public void choose(View view)
 {
 	
-	if(whichOne > length)
-		result();
+	
 	setContentView(R.layout.choosen);
 	String text = String.valueOf(whichOne+1);
 	TextView textview1 = (TextView)findViewById(R.id.textView1);
@@ -154,12 +153,15 @@ public void choose(View view)
     TextView textview2 = (TextView)findViewById(R.id.textView2);
     textview2.setText(text);
     
-    
+    if(whichOne > length)
+		result();
 }
 public void next(View view)
 {
 	
 	setContentView(R.layout.next);
+	if(whichOne > length)
+		result();
 }
 /* show the result */
 public void result()
@@ -175,6 +177,12 @@ public void result()
 	}
 	TextView textview1 = (TextView)findViewById(R.id.textView1);
     textview1.setText(text);
+}
+
+public void restart(View view)
+{
+	setContentView(R.layout.activity_main);
+	start(view);
 }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

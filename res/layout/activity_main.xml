@@ -43,27 +43,6 @@
         android:ems="10"
         android:inputType="number" />
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/editText3"
-        android:layout_marginTop="50dp"
-        android:checked="false"
-        android:text="上帝" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox1"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="68dp"
-        android:layout_toRightOf="@+id/checkBox1"
-        android:text="确定"
-        android:onClick="start" />
-
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
@@ -86,5 +65,32 @@
         android:layout_alignLeft="@+id/editText2"
         android:ems="10"
         android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:checked="false"
+        android:text="法官" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="警告：输入超过100，我没有判断，请jin&apos;she" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:onClick="start"
+        android:text="确定" />
 
 </RelativeLayout>
