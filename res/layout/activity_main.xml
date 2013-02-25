@@ -34,15 +34,6 @@
         android:text="平民" />
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignTop="@+id/textView1"
-        android:ems="10"
-        android:inputType="number" />
-
-    <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,6 +50,7 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/editText3"
         android:layout_marginTop="50dp"
+        android:checked="false"
         android:text="上帝" />
 
     <Button
@@ -76,8 +68,22 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox1"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/editText2"
         android:ems="10"
         android:inputType="number" />
 
